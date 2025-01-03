@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\css\bootstrap-grid.css.map" />
     <None Include="wwwroot\css\bootstrap-grid.min.css.map" />
     <None Include="wwwroot\css\bootstrap-grid.rtl.css.map" />
@@ -43,6 +39,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AgendaWeb.Infra.Data\AgendaWeb.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>

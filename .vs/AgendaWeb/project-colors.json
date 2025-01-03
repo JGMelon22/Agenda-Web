@@ -10,7 +10,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Arquivos Diversos",
       "ColorIndex": -1
+    },
+    "e333424a-478f-4b73-bddc-932f149ef3f4": {
+      "ProjectGuid": "e333424a-478f-4b73-bddc-932f149ef3f4",
+      "DisplayName": "AgendaWeb.Infra.Data",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

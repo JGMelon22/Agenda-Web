@@ -1,0 +1,21 @@
+﻿using AgendaWeb.Infra.Data.Entities;
+using System.ComponentModel.DataAnnotations;
+
+namespace AgendaWeb.Presentation.Models
+{
+    public class EventoConsultaViewModel
+    {
+        [Required(ErrorMessage = "Por favor, informe a data de início.")]
+        public string? DataMin { get; set; }
+
+        [Required(ErrorMessage = "Por favor, informe a data de término.")]
+        public string? DataMax { get; set; }
+
+        [Required(ErrorMessage = "Por favor, marque ativo ou inativo.")]
+        public int? Ativo { get; set; }
+
+        //Lista de ventos que será utilizado para exibir
+        //na página o resultado da consulta feita no banco
+        public List<Evento>? Eventos { get; set; }
+    }
+}

@@ -1,23 +1,26 @@
-﻿<h5>Edição de Evento</h5>
+﻿@model AgendaWeb.Presentation.Models.EventoEdicaoViewModel
+
+
+<h5>Edição de Evento</h5>
 <p>
     Utilize os campos para editar um evento de sua agenda.
 </p>
 <hr/>
 
-<form>
-
+@using(Html.BeginForm())
+{
     <div class="row mb-3">
         <div class="col-md-6">
             <label>Nome do evento:</label>
-            <input type="text" class="form-control"/>
+            <input type="text" class="form-control" />
         </div>
         <div class="col-md-3">
             <label>Data do evento:</label>
-            <input type="date" class="form-control"/>
+            <input type="date" class="form-control" />
         </div>
         <div class="col-md-3">
             <label>Hora do evento:</label>
-            <input type="time" class="form-control"/>
+            <input type="time" class="form-control" />
         </div>
     </div>
 
@@ -38,9 +41,11 @@
 
     <div class="row mb-3">
         <div class="col-md-12">
-            <input type="submit" value="Salvar Alterações" class="btn btn-primary"/>
+            <input type="submit" value="Salvar Alterações" class="btn btn-primary" />
             <a href="/Agenda/Consulta" class="btn btn-secondary">Cancelar</a>
         </div>
     </div>
 
-</form>
+}
+
+

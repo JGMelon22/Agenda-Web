@@ -1,0 +1,37 @@
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.deps.json
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.dll
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\ref\AgendaWeb.Infra.Data.dll
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.pdb
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.AssemblyInfo.cs
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.dll
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\ref\AgendaWeb.Infra.Data.dll
+C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 07 - 29.01.22\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.pdb
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.deps.json
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.dll
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.pdb
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.AssemblyInfo.cs
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.dll
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\refint\AgendaWeb.Infra.Data.dll
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.pdb
+C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\ref\AgendaWeb.Infra.Data.dll
+D:\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.deps.json
+D:\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.dll
+D:\AgendaWeb\AgendaWeb.Infra.Data\bin\Debug\net6.0\AgendaWeb.Infra.Data.pdb
+D:\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.csproj.AssemblyReference.cache
+D:\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.AssemblyInfoInputs.cache
+D:\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.AssemblyInfo.cs
+D:\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.csproj.CoreCompileInputs.cache
+D:\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.sourcelink.json
+D:\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.dll
+D:\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\refint\AgendaWeb.Infra.Data.dll
+D:\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\AgendaWeb.Infra.Data.pdb
+D:\AgendaWeb\AgendaWeb.Infra.Data\obj\Debug\net6.0\ref\AgendaWeb.Infra.Data.dll

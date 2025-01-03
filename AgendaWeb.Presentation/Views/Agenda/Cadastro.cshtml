@@ -1,45 +1,67 @@
-﻿<h5>Cadastro de Evento</h5>
+﻿@* definindo a classe de modelo de dados utilizada nesta página *@
+@model AgendaWeb.Presentation.Models.EventoCadastroViewModel
+
+<h5>Cadastro de Evento</h5>
 <p>
     Preencha os campos para criar um evento em sua agenda.
 </p>
-<hr/>
+<hr />
 
-<form>
-
+@* declarando  o formulário *@
+@using (Html.BeginForm())
+{
     <div class="row mb-3">
         <div class="col-md-6">
             <label>Nome do evento:</label>
-            <input type="text" class="form-control"/>
+            @Html.TextBoxFor(model => model.Nome, 
+                new { @class = "form-control" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Nome)
+            </span>
         </div>
         <div class="col-md-3">
             <label>Data do evento:</label>
-            <input type="date" class="form-control"/>
+            @Html.TextBoxFor(model => model.Data, 
+                new { @type = "date", @class = "form-control" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Data)
+            </span>
         </div>
         <div class="col-md-3">
             <label>Hora do evento:</label>
-            <input type="time" class="form-control"/>
+            @Html.TextBoxFor(model => model.Hora, 
+                new { @type = "time", @class = "form-control" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Hora)
+            </span>
         </div>
     </div>
 
     <div class="row mb-3">
         <div class="col-md-6">
             <label>Descrição do evento:</label>
-            <textarea class="form-control"></textarea>
+            @Html.TextAreaFor(model => model.Descricao, 
+                new { @class = "form-control" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Descricao)
+            </span>
         </div>
         <div class="col-md-3">
             <label>Prioridade do evento:</label>
-            <select class="form-select">
-                <option>BAIXA</option>
-                <option>MÉDIA</option>
-                <option>ALTA</option>
-            </select>
+            <br/>
+            @Html.RadioButtonFor(model => model.Prioridade, "1") <label>Baixa</label> <br/>
+            @Html.RadioButtonFor(model => model.Prioridade, "2") <label>Média</label> <br/>
+            @Html.RadioButtonFor(model => model.Prioridade, "3") <label>Alta</label> <br/>
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Prioridade)
+            </span>
         </div>
     </div>
 
     <div class="row mb-3">
         <div class="col-md-12">
-            <input type="submit" value="Realizar Cadastro" class="btn btn-success"/>
+            <input type="submit" value="Realizar Cadastro" class="btn btn-success" />
         </div>
     </div>
 
-</form>
+}

@@ -1,19 +1,40 @@
-﻿<h5>Consulta de Eventos</h5>
+﻿@* classe de modelo utilizada nesta página *@
+@model AgendaWeb.Presentation.Models.EventoConsultaViewModel
+
+<h5>Consulta de Eventos</h5>
 <p>
     Preencha os campos para consultar os eventos de sua agenda.
 </p>
 <hr />
 
-<form>
-
+@using(Html.BeginForm())
+{
     <div class="row mb-3">
         <div class="col-md-3">
             <label>Data de início:</label>
-            <input type="date" class="form-control" />
+            @Html.TextBoxFor(model => model.DataMin, 
+                new { @type = "date", @class = "form-control" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataMin)
+            </span>
         </div>
         <div class="col-md-3">
             <label>Data de término:</label>
-            <input type="date" class="form-control" />
+            @Html.TextBoxFor(model => model.DataMax, 
+                new { @type = "date", @class = "form-control" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataMax)
+            </span>
+        </div>
+
+        <div class="col-md-6">
+            <label>Selecione o tipo: </label> <br/>
+            @Html.RadioButtonFor(model => model.Ativo, "1") <span>Eventos Ativos</span>
+            &nbsp;&nbsp;
+            @Html.RadioButtonFor(model => model.Ativo, "0") <span>Eventos Inativos</span> <br/>
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Ativo)
+            </span>
         </div>
     </div>
 
@@ -23,35 +44,68 @@
         </div>
     </div>
 
-</form>
+}
 
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>Nome do evento</th>
-            <th>Data</th>
-            <th>Hora</th>
-            <th>Prioridade</th>
-            <th>Operações</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <a href="/Agenda/Edicao" class="btn btn-primary btn-sm">Alterar</a>
-                <a href="#" class="btn btn-danger btn-sm">Excluir</a>
-            </td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="5">
-                Quantidade de eventos: 0
-            </td>
-        </tr>
-    </tfoot>
-</table>
+
+@if(Model != null && Model.Eventos.Count > 0)
+{
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Nome do evento</th>
+                <th>Data</th>
+                <th>Horário</th>
+                <th>Prioridade</th>
+                <th>Ativo</th>
+                <th>Operações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.Eventos)
+            {
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@Convert.ToDateTime(item.Data).ToString("ddd, dd/MM/yyyy")</td>
+                    <td>@item.Hora</td>
+                    <td>
+                        @if(item.Prioridade == 1)
+                        {
+                            <span class="text-success">BAIXA</span>
+                        }
+                        else if(item.Prioridade == 2)
+                        {
+                            <span class="text-warning">MÉDIA</span>
+                        }
+                        else if(item.Prioridade == 3)
+                        {
+                            <span class="text-danger">ALTA</span>
+                        }
+                    </td>
+                    <td>
+                        @if(item.Ativo == 0)
+                        {
+                            <span class="text-danger">Não</span>
+                        }
+                        else if(item.Ativo == 1)
+                        {
+                           <span class="text-success">Sim</span> 
+                        }
+                    </td>
+                    <td>
+                        <a href="/Agenda/Edicao" class="btn btn-primary btn-sm">Alterar</a>
+                        <a href="#" class="btn btn-danger btn-sm">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                    Quantidade de eventos: @Model.Eventos.Count
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+}
+
