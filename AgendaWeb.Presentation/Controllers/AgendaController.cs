@@ -104,8 +104,68 @@ namespace AgendaWeb.Presentation.Controllers
             return View(model);
         }
 
-        public IActionResult Edicao()
+        public IActionResult Edicao(Guid id)
         {
+            var model = new EventoEdicaoViewModel();
+
+            try
+            {
+                var evento = _eventoRepository.GetById(id);
+
+                model.Id = evento.Id;
+                model.Nome = evento.Nome;
+                model.Data = Convert.ToDateTime(evento.Data).ToString("yyyy-MM-dd");
+                model.Hora = evento.Hora.ToString();
+                model.Descricao = evento.Descricao;
+                model.Prioridade =  evento.Prioridade.ToString();
+
+            }
+            catch(Exception e)
+            {
+                TempData["MensagemErro"] =e.Message;
+            }
+            
+            
+            
+            return View(model);
+        }
+
+
+        [HttpPost]
+        public IActionResult Edicao(EventoEdicaoViewModel model)
+        {
+            //verificar se todos os campos passaram nas regras de validação
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    //obtendo os dados do evento no banco de dados..
+                    var evento = _eventoRepository.GetById(model.Id);
+
+                    //modificar os dados do evento
+                    evento.Nome = model.Nome;
+                    evento.Data = Convert.ToDateTime(model.Data);
+                    evento.Hora = TimeSpan.Parse(model.Hora);
+                    evento.Descricao = model.Descricao;
+                    evento.Prioridade = Convert.ToInt32(model.Prioridade);
+                    evento.Ativo = model.Ativo;
+                    evento.DataAlteracao = DateTime.Now;
+
+                    //atualizando no banco de dados
+                    _eventoRepository.Update(evento);
+
+                    TempData["MensagemSucesso"] = "Dados do evento atualizado com sucesso.";
+                }
+                catch (Exception e)
+                {
+                    TempData["MensagemErro"] = e.Message;
+                }
+            }
+            else
+            {
+                TempData["MensagemAlerta"] = "Ocorreram erros de validação no preenchimento do formulário.";
+            }
+
             return View();
         }
 
@@ -115,3 +175,5 @@ namespace AgendaWeb.Presentation.Controllers
         }
     }
 }
+
+

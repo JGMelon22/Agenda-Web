@@ -21,6 +21,6 @@ namespace AgendaWeb.Infra.Data.Interfaces
         /// <returns>Lista de eventos</returns>
         List<Evento> GetByDatas(DateTime? dataMin, DateTime? dataMax, int? ativo);
         List<Evento>? GetByDatas(object dataMin, object dataMax, int? ativo);
-
+        
     }
 }
