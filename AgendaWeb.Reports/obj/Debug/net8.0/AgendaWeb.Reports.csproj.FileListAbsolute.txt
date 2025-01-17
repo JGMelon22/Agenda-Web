@@ -1,0 +1,16 @@
+D:\AgendaWeb\AgendaWeb.Reports\bin\Debug\net8.0\AgendaWeb.Reports.deps.json
+D:\AgendaWeb\AgendaWeb.Reports\bin\Debug\net8.0\AgendaWeb.Reports.dll
+D:\AgendaWeb\AgendaWeb.Reports\bin\Debug\net8.0\AgendaWeb.Reports.pdb
+D:\AgendaWeb\AgendaWeb.Reports\bin\Debug\net8.0\AgendaWeb.Infra.Data.dll
+D:\AgendaWeb\AgendaWeb.Reports\bin\Debug\net8.0\AgendaWeb.Infra.Data.pdb
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\AgendaWeb.Reports.csproj.AssemblyReference.cache
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\AgendaWeb.Reports.GeneratedMSBuildEditorConfig.editorconfig
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\AgendaWeb.Reports.AssemblyInfoInputs.cache
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\AgendaWeb.Reports.AssemblyInfo.cs
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\AgendaWeb.Reports.csproj.CoreCompileInputs.cache
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\AgendaWeb.Reports.sourcelink.json
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\AgendaWe.1EA4C413.Up2Date
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\AgendaWeb.Reports.dll
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\refint\AgendaWeb.Reports.dll
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\AgendaWeb.Reports.pdb
+D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net8.0\ref\AgendaWeb.Reports.dll

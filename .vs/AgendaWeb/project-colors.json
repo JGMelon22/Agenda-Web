@@ -15,7 +15,12 @@
       "ProjectGuid": "e333424a-478f-4b73-bddc-932f149ef3f4",
       "DisplayName": "AgendaWeb.Infra.Data",
       "ColorIndex": 1
+    },
+    "bd71018f-ae62-4d49-8f22-c7f8475be29f": {
+      "ProjectGuid": "bd71018f-ae62-4d49-8f22-c7f8475be29f",
+      "DisplayName": "AgendaWeb.Reports",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

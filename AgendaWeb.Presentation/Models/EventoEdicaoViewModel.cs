@@ -4,6 +4,7 @@ namespace AgendaWeb.Presentation.Models
 {
     public class EventoEdicaoViewModel
     {
+        //campo oculto
         public Guid Id { get; set; }
 
         [MinLength(6, ErrorMessage = "Por favor, informe no mínimo {1} caracteres.")]
@@ -24,6 +25,7 @@ namespace AgendaWeb.Presentation.Models
         [Required(ErrorMessage = "Por favor, informe a prioridade do evento.")]
         public string? Prioridade { get; set; }
 
-        public int? Ativo{ get; set; }
+        [Required(ErrorMessage = "Por favor, informe se o evento está ativo ou inativo.")]
+        public int? Ativo { get; set; }
     }
 }

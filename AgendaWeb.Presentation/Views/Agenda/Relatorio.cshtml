@@ -1,24 +1,47 @@
-﻿<h5>Relatório de Eventos</h5>
+﻿@* Classe de modelo de dados da página *@
+@model AgendaWeb.Presentation.Models.EventoRelatorioViewModel
+
+<h5>Relatório de Eventos</h5>
 <p>
     Preencha os campos para gerar um relatório com seus eventos.
 </p>
 <hr/>
 
-<form>
-
+@using(Html.BeginForm())
+{
     <div class="row mb-3">
         <div class="col-md-3">
             <label>Data de início:</label>
-            <input type="date" class="form-control" />
+            @Html.TextBoxFor(model => model.DataMin, 
+                new { @class = "form-control", @type = "date" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataMin)
+            </span>
         </div>
         <div class="col-md-3">
             <label>Data de término:</label>
-            <input type="date" class="form-control" />
+             @Html.TextBoxFor(model => model.DataMax, 
+                new { @class = "form-control", @type = "date" })
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataMax)
+            </span>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-2">
+            <label>Tipo do Evento:</label> <br/>
+            @Html.RadioButtonFor(model => model.Ativo, 1) Ativos <br/>
+            @Html.RadioButtonFor(model => model.Ativo, 0) Inativos <br/>
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Ativo)
+            </span>
+        </div>
+
+        <div class="col-md-3">
             <label>Tipo do Relatório:</label> <br/>
-            <input type="radio" name="tipo"/> Formato PDF <br/>
-            <input type="radio" name="tipo"/> Formato Excel
+            @Html.RadioButtonFor(model => model.Formato, 1) Formato PDF <br/>
+            @Html.RadioButtonFor(model => model.Formato, 2) Formato Excel <br/>
+            <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Formato)
+            </span>
         </div>
     </div>
 
@@ -28,4 +51,4 @@
         </div>
     </div>
 
-</form>
+}

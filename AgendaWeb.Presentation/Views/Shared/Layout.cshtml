@@ -45,23 +45,19 @@
         </div>
     </nav>
 
-
-    <!-- Exibir mensagem de sucesso --!>
-
+    <!-- exibir mensagem de sucesso -->
     @if (TempData["MensagemSucesso"] != null)
     {
-
-       <div class="alert alert-success alert-dismissible fade show" role="alert">
-           <strong>Sucesso!</strong> @TempData["MensagemSucesso"]
-           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-       </div>
-
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Sucesso!</strong> @TempData["MensagemSucesso"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
     }
     else if (TempData["MensagemAlerta"] != null)
     {
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-          <strong>Aviso!</strong> @TempData["MensagemAlerta"]
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <strong>Aviso!</strong> @TempData["MensagemAlerta"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     }
     else if (TempData["MensagemErro"] != null)
@@ -74,11 +70,11 @@
 
     <div class="container mt-4">
         <!-- local onde é inserido o conteudo das páginas -->
-    <div class="card">
-        <div class="card-body">
+        <div class="card">
+            <div class="card-body">
                 @RenderBody()
+            </div>
         </div>
-    </div>
     </div>
 
     <!-- arquivos de estensão JS -->

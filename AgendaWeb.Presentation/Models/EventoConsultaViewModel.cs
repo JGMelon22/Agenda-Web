@@ -11,10 +11,10 @@ namespace AgendaWeb.Presentation.Models
         [Required(ErrorMessage = "Por favor, informe a data de término.")]
         public string? DataMax { get; set; }
 
-        [Required(ErrorMessage = "Por favor, marque ativo ou inativo.")]
+        [Required(ErrorMessage = "Por favor, marque Ativo ou Inativo")]
         public int? Ativo { get; set; }
 
-        //Lista de ventos que será utilizado para exibir
+        //Lista de eventos que será utilizado para exibir
         //na página o resultado da consulta feita no banco
         public List<Evento>? Eventos { get; set; }
     }

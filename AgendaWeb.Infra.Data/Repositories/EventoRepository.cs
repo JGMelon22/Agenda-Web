@@ -29,8 +29,10 @@ namespace AgendaWeb.Infra.Data.Repositories
         public void Create(Evento obj)
         {
             var query = @"
-                INSERT INTO EVENTO(ID, NOME, DATA, HORA, DESCRICAO, PRIORIDADE, DATAINCLUSAO, DATAALTERACAO)
-                VALUES(@Id, @Nome, @Data, @Hora, @Descricao, @Prioridade, @DataInclusao, @DataAlteracao)
+                INSERT INTO EVENTO
+                (ID, NOME, DATA, HORA, DESCRICAO, PRIORIDADE, DATAINCLUSAO, DATAALTERACAO)
+                VALUES
+                (@Id, @Nome, @Data, @Hora, @Descricao, @Prioridade, @DataInclusao, @DataAlteracao)
             ";
 
             //conectando no banco de dados
@@ -44,21 +46,22 @@ namespace AgendaWeb.Infra.Data.Repositories
         public void Update(Evento obj)
         {
             var query = @"
-                UPDATE EVENTO
-                SET
+                UPDATE EVENTO 
+                SET 
                     NOME = @Nome,
                     DATA = @Data,
                     HORA = @Hora,
                     DESCRICAO = @Descricao,
-                    Prioridade = @Prioridade,
+                    PRIORIDADE = @Prioridade,
                     DATAALTERACAO = @DataAlteracao,
                     ATIVO = @Ativo
-                WHERE
-                    ID = @ID
+                WHERE 
+                    ID = @Id
             ";
-            using( var connection = new SqlConnection(_connectionString)) 
-            { 
-                connection.Execute(query, obj); 
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Execute(query, obj);
             }
         }
 
@@ -69,7 +72,7 @@ namespace AgendaWeb.Infra.Data.Repositories
                 WHERE ID = @Id
             ";
 
-            using(var connection = new SqlConnection(_connectionString))
+            using (var connection = new SqlConnection(_connectionString))
             {
                 connection.Execute(query, obj);
             }
@@ -97,10 +100,11 @@ namespace AgendaWeb.Infra.Data.Repositories
                 WHERE ID = @id
             ";
 
-            using ( var connection = new SqlConnection(_connectionString))
+            using (var connection = new SqlConnection(_connectionString))
             {
-                return connection.Query<Evento>(query, new { id })
-                                 .FirstOrDefault();
+                return connection
+                    .Query<Evento>(query, new { id })
+                    .FirstOrDefault();
             }
         }
 
@@ -115,14 +119,9 @@ namespace AgendaWeb.Infra.Data.Repositories
             using (var connection = new SqlConnection(_connectionString))
             {
                 return connection
-                    .Query<Evento>(query, new { dataMin, dataMax, ativo })
+                    .Query<Evento>(query, new { ativo, dataMin, dataMax })
                     .ToList();
             }
-        }
-
-        public List<Evento>? GetByDatas(object dataMin, object dataMax, int? ativo)
-        {
-            throw new NotImplementedException();
         }
     }
 }

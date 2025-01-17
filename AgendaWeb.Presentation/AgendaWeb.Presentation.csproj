@@ -43,6 +43,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AgendaWeb.Infra.Data\AgendaWeb.Infra.Data.csproj" />
+    <ProjectReference Include="..\AgendaWeb.Reports\AgendaWeb.Reports.csproj" />
   </ItemGroup>
 
 </Project>

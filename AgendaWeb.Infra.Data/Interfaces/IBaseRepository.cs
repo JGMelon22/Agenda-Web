@@ -1,5 +1,4 @@
-﻿using AgendaWeb.Infra.Data.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,8 +17,6 @@ namespace AgendaWeb.Infra.Data.Interfaces
         void Delete(TEntity obj);
 
         List<TEntity> GetAll();
-
         TEntity? GetById(Guid id);
-        List<Evento> GetByDatas(DateTime? dataMin, DateTime? dataMax, int? ativo);
     }
 }

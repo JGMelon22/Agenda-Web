@@ -7,31 +7,31 @@
 </p>
 <hr />
 
-@using(Html.BeginForm())
+@using (Html.BeginForm())
 {
     <div class="row mb-3">
         <div class="col-md-3">
             <label>Data de início:</label>
-            @Html.TextBoxFor(model => model.DataMin, 
-                new { @type = "date", @class = "form-control" })
+            @Html.TextBoxFor(model => model.DataMin,
+        new { @type = "date", @class = "form-control" })
             <span class="text-danger">
                 @Html.ValidationMessageFor(model => model.DataMin)
             </span>
         </div>
         <div class="col-md-3">
             <label>Data de término:</label>
-            @Html.TextBoxFor(model => model.DataMax, 
-                new { @type = "date", @class = "form-control" })
+            @Html.TextBoxFor(model => model.DataMax,
+        new { @type = "date", @class = "form-control" })
             <span class="text-danger">
                 @Html.ValidationMessageFor(model => model.DataMax)
             </span>
         </div>
-
         <div class="col-md-6">
-            <label>Selecione o tipo: </label> <br/>
+            <br />
             @Html.RadioButtonFor(model => model.Ativo, "1") <span>Eventos Ativos</span>
             &nbsp;&nbsp;
-            @Html.RadioButtonFor(model => model.Ativo, "0") <span>Eventos Inativos</span> <br/>
+            @Html.RadioButtonFor(model => model.Ativo, "0") <span>Eventos Inativos</span>
+            <br />
             <span class="text-danger">
                 @Html.ValidationMessageFor(model => model.Ativo)
             </span>
@@ -46,18 +46,17 @@
 
 }
 
-
-@if(Model != null && Model.Eventos != null && Model.Eventos.Count > 0)
+@if (Model != null && Model.Eventos != null && Model.Eventos.Count > 0)
 {
     <table class="table table-hover">
         <thead>
             <tr>
                 <th>Nome do evento</th>
                 <th>Data</th>
-                <th>Horário</th>
+                <th>Hora</th>
                 <th>Prioridade</th>
                 <th>Ativo</th>
-                <th>Operações</th>
+                <th>Operações</th>                
             </tr>
         </thead>
         <tbody>
@@ -70,15 +69,15 @@
                     <td>
                         @if(item.Prioridade == 1)
                         {
-                            <span class="text-success">BAIXA</span>
+                            <span class="badge bg-success">BAIXA</span>
                         }
                         else if(item.Prioridade == 2)
                         {
-                            <span class="text-warning">MÉDIA</span>
+                            <span class="badge bg-warning">MÉDIA</span>
                         }
                         else if(item.Prioridade == 3)
                         {
-                            <span class="text-danger">ALTA</span>
+                            <span class="badge bg-danger">ALTA</span>
                         }
                     </td>
                     <td>
@@ -88,24 +87,29 @@
                         }
                         else if(item.Ativo == 1)
                         {
-                           <span class="text-success">Sim</span> 
+                            <span class="text-success">Sim</span>
                         }
                     </td>
                     <td>
-                        <a href="/Agenda/Edicao?id=@item.Id" class="btn btn-primary btn-sm">Alterar</a>
-                        <a href="#" class="btn btn-danger btn-sm">Excluir</a>
+                        <a href="/Agenda/Edicao?id=@item.Id" class="btn btn-primary btn-sm">
+                            Alterar
+                        </a>
+                        <a href="/Agenda/Exclusao?id=@item.Id" 
+                            onclick="return confirm('Deseja realmente excluir o evento: @item.Nome?');"
+                            class="btn btn-danger btn-sm">
+                            Excluir
+                        </a>
                     </td>
                 </tr>
             }
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="5">
+                <td colspan="6">
                     Quantidade de eventos: @Model.Eventos.Count
                 </td>
             </tr>
         </tfoot>
     </table>
-
 }
 
