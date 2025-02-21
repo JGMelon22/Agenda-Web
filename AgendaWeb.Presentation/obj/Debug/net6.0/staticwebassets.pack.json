@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
     },
     {
+      "Id": "D:\\AgendaWeb\\AgendaWeb.Presentation\\wwwroot\\images\\user.webp",
+      "PackagePath": "staticwebassets\\images\\user.webp"
+    },
+    {
       "Id": "D:\\AgendaWeb\\AgendaWeb.Presentation\\wwwroot\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
     },

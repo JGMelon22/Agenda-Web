@@ -1,0 +1,87 @@
+﻿@model AgendaWeb.Presentation.Models.AccountLoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login de Usuário</title>
+
+    <!-- folhas de estilo CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+
+</head>
+<body class="bg-secondary">
+
+    <div class="mt-5">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img src="https://www.cotiinformatica.com.br/imagens/logo-coti-informatica.png" />
+                            <h5 class="card-title">Acesso ao Sistema</h5>
+                            <p>Informe seus dados de acesso</p>
+                        </div>
+                        <hr />
+
+                        @if (TempData["MensagemErro"] != null)
+                        {
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <strong>Erro!</strong>
+                                @TempData["MensagemErro"]
+                                <button type="button" class="btn-close"
+                                        data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        }
+
+                        @using (Html.BeginForm())
+                        {
+                            <label>Email de acesso:</label>
+                            @Html.TextBoxFor(model => model.Email, new
+                                {
+                                    @class = "form-control"
+                                })
+                            <span>
+                                @Html.ValidationMessageFor(model =>
+                                         model.Email)
+                            </span>
+                            <br />
+
+                            <label>Senha de acesso:</label>
+                            @Html.PasswordFor(model => model.Senha, new
+                                {
+                                    @class = "form-control"
+                                })
+                            <span>
+                                @Html.ValidationMessageFor(model =>
+                                         model.Senha)
+                            </span>
+                            <br />
+
+                            <div class="d-grid mb-2">
+                                <input type="submit" value="Acessar Conta"
+                                       class="btn btn-dark" />
+                            </div>
+
+                            <div class="d-grid mb-2">
+                                <a href="/Account/Register" class="btn btn-light">Criar Conta de Usuário</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- arquivos de estensão JS -->
+    <script src="~/js/bootstrap.js"></script>
+</body>
+</html>
+
+

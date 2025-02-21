@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7ZCO+uN5fGAWZ0SrdEV/cnPL9SRK21HkFoVSxTF2pQg=",
+  "Hash": "isyMPMpkd3rSMBWrYPb9LQiOgLTWKlj5dMZ2aAc1Xs0=",
   "Source": "AgendaWeb.Presentation",
   "BasePath": "_content/AgendaWeb.Presentation",
   "Mode": "Default",
@@ -623,6 +623,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Identity": "D:\\AgendaWeb\\AgendaWeb.Presentation\\wwwroot\\images\\user.webp",
+      "SourceId": "AgendaWeb.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\AgendaWeb\\AgendaWeb.Presentation\\wwwroot\\",
+      "BasePath": "_content/AgendaWeb.Presentation",
+      "RelativePath": "images/user.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user.webp"
     },
     {
       "Identity": "D:\\AgendaWeb\\AgendaWeb.Presentation\\wwwroot\\js\\bootstrap.bundle.js",

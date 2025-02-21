@@ -1,4 +1,4 @@
-﻿using AgendaWeb.Infra.Data.Entities;
+﻿ using AgendaWeb.Infra.Data.Entities;
 using AgendaWeb.Reports.Interfaces;
 using iText.Kernel.Font;
 using iText.Kernel.Pdf;

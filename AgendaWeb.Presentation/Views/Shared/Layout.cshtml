@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
     Layout = null;
 }
 
@@ -41,6 +44,15 @@
                         </ul>
                     </li>
                 </ul>
+
+                <form class="d-flex">
+                    <span class="text-white">Usuário:</span>
+                    &nbsp;
+                    <strong class="text-white">
+                        @HttpContextAccessor.HttpContext.Session.GetString("nome_usuario")
+                    </strong>
+                    &nbsp; &nbsp;
+                </form>
             </div>
         </div>
     </nav>

@@ -22,7 +22,15 @@ namespace AgendaWeb.Infra.Data.Entities
         public DateTime? DataInclusao { get; set; }
         public DateTime? DataAlteracao { get; set; }
         public int? Ativo { get; set; }
+        public Guid IdUsuario { get; set; }
 
         #endregion
+
+        #region Relacionamentos
+
+        public Usuario? Usuario { get; set; }
+
+        #endregion
+
     }
 }

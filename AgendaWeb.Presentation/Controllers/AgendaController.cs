@@ -83,7 +83,7 @@ namespace AgendaWeb.Presentation.Controllers
                     if(dataMin <= dataMax)
                     {
                         //realizando a consulta de eventos
-                        model.Eventos = _eventoRepository.GetByDatas(dataMin, dataMax, model.Ativo);
+                        model.Eventos = _eventoRepository.GetByDatas(dataMin, dataMax, model.Ativo,Guid.NewGuid ());
 
                         //verificando se algum evento foi obtido
                         if (model.Eventos.Count > 0)
@@ -223,7 +223,7 @@ namespace AgendaWeb.Presentation.Controllers
                     DateTime dataMax = Convert.ToDateTime(model.DataMax);
 
                     //consultar os eventos no banco atraves das datas
-                    var eventos = _eventoRepository.GetByDatas(dataMin, dataMax, model.Ativo);
+                    var eventos = _eventoRepository.GetByDatas(dataMin, dataMax, model.Ativo, Guid.NewGuid());
 
                     //verificar se algum evento foi obtido
                     if(eventos.Count > 0)

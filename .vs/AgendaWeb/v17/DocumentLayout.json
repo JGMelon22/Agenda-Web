@@ -3,36 +3,76 @@
   "WorkspaceRootPath": "D:\\AgendaWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\controllers\\agendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\controllers\\agendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD71018F-AE62-4D49-8F22-C7F8475BE29F}|AgendaWeb.Reports\\AgendaWeb.Reports.csproj|d:\\agendaweb\\agendaweb.reports\\interfaces\\ieventoreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD71018F-AE62-4D49-8F22-C7F8475BE29F}|AgendaWeb.Reports\\AgendaWeb.Reports.csproj|solutionrelative:agendaweb.reports\\interfaces\\ieventoreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD71018F-AE62-4D49-8F22-C7F8475BE29F}|AgendaWeb.Reports\\AgendaWeb.Reports.csproj|d:\\agendaweb\\agendaweb.reports\\services\\eventoreportserviceexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD71018F-AE62-4D49-8F22-C7F8475BE29F}|AgendaWeb.Reports\\AgendaWeb.Reports.csproj|solutionrelative:agendaweb.reports\\services\\eventoreportserviceexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD71018F-AE62-4D49-8F22-C7F8475BE29F}|AgendaWeb.Reports\\AgendaWeb.Reports.csproj|d:\\agendaweb\\agendaweb.reports\\services\\eventoreportservicepdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD71018F-AE62-4D49-8F22-C7F8475BE29F}|AgendaWeb.Reports\\AgendaWeb.Reports.csproj|solutionrelative:agendaweb.reports\\services\\eventoreportservicepdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|d:\\agendaweb\\agendaweb.infra.data\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|solutionrelative:agendaweb.infra.data\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\views\\agenda\\relatorio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\views\\agenda\\relatorio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|d:\\agendaweb\\agendaweb.infra.data\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|solutionrelative:agendaweb.infra.data\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|d:\\agendaweb\\agendaweb.infra.data\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|solutionrelative:agendaweb.infra.data\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|d:\\agendaweb\\agendaweb.infra.data\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|solutionrelative:agendaweb.infra.data\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\views\\agenda\\cadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\views\\agenda\\cadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|d:\\agendaweb\\agendaweb.infra.data\\utils\\criptografia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|solutionrelative:agendaweb.infra.data\\utils\\criptografia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|d:\\agendaweb\\agendaweb.infra.data\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|solutionrelative:agendaweb.infra.data\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\views\\agenda\\cadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\views\\agenda\\cadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|d:\\agendaweb\\agendaweb.infra.data\\interfaces\\ieventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|solutionrelative:agendaweb.infra.data\\interfaces\\ieventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\models\\accountregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\models\\accountregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\models\\eventocadastroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\models\\eventocadastroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\models\\accountloginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\models\\accountloginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|d:\\agendaweb\\agendaweb.presentation\\controllers\\agendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6398064B-9226-4C31-AD0F-2E76BEC7175B}|AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj|solutionrelative:agendaweb.presentation\\controllers\\agendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|d:\\agendaweb\\agendaweb.infra.data\\entities\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E333424A-478F-4B73-BDDC-932F149EF3F4}|AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj|solutionrelative:agendaweb.infra.data\\entities\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,104 +82,241 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EventoReportServiceExcel.cs",
-              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Reports\\Services\\EventoReportServiceExcel.cs",
-              "RelativeDocumentMoniker": "AgendaWeb.Reports\\Services\\EventoReportServiceExcel.cs",
-              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Reports\\Services\\EventoReportServiceExcel.cs",
-              "RelativeToolTip": "AgendaWeb.Reports\\Services\\EventoReportServiceExcel.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAgwDwAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T16:23:57.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EventoReportServicePdf.cs",
-              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Reports\\Services\\EventoReportServicePdf.cs",
-              "RelativeDocumentMoniker": "AgendaWeb.Reports\\Services\\EventoReportServicePdf.cs",
-              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Reports\\Services\\EventoReportServicePdf.cs",
-              "RelativeToolTip": "AgendaWeb.Reports\\Services\\EventoReportServicePdf.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAmwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T19:11:24.721Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AgendaController.cs",
-              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Controllers\\AgendaController.cs",
-              "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Controllers\\AgendaController.cs",
-              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Controllers\\AgendaController.cs",
-              "RelativeToolTip": "AgendaWeb.Presentation\\Controllers\\AgendaController.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAEMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T16:23:57.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IEventoReportService.cs",
-              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Reports\\Interfaces\\IEventoReportService.cs",
-              "RelativeDocumentMoniker": "AgendaWeb.Reports\\Interfaces\\IEventoReportService.cs",
-              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Reports\\Interfaces\\IEventoReportService.cs",
-              "RelativeToolTip": "AgendaWeb.Reports\\Interfaces\\IEventoReportService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T16:23:57.09Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Relatorio.cshtml",
-              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Views\\Agenda\\Relatorio.cshtml",
-              "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Views\\Agenda\\Relatorio.cshtml",
-              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Views\\Agenda\\Relatorio.cshtml",
-              "RelativeToolTip": "AgendaWeb.Presentation\\Views\\Agenda\\Relatorio.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-15T16:27:24.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EventoRepository.cs",
-              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Repositories\\EventoRepository.cs",
-              "RelativeDocumentMoniker": "AgendaWeb.Infra.Data\\Repositories\\EventoRepository.cs",
-              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Repositories\\EventoRepository.cs",
-              "RelativeToolTip": "AgendaWeb.Infra.Data\\Repositories\\EventoRepository.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAIwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T16:29:12.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\appsettings.json",
               "RelativeDocumentMoniker": "AgendaWeb.Presentation\\appsettings.json",
               "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\appsettings.json",
               "RelativeToolTip": "AgendaWeb.Presentation\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAB5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-15T16:47:09.264Z"
+              "WhenOpened": "2025-02-20T19:02:21.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "AgendaWeb.Presentation\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T12:15:54.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Program.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Program.cs",
+              "RelativeToolTip": "AgendaWeb.Presentation\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T14:21:11.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Infra.Data\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "AgendaWeb.Infra.Data\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAQwFUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T12:48:26.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Infra.Data\\Entities\\Usuario.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Entities\\Usuario.cs",
+              "RelativeToolTip": "AgendaWeb.Infra.Data\\Entities\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T14:57:40.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Interfaces\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Infra.Data\\Interfaces\\IBaseRepository.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Interfaces\\IBaseRepository.cs",
+              "RelativeToolTip": "AgendaWeb.Infra.Data\\Interfaces\\IBaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T12:45:36.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IEventoRepository.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Interfaces\\IEventoRepository.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Infra.Data\\Interfaces\\IEventoRepository.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Interfaces\\IEventoRepository.cs",
+              "RelativeToolTip": "AgendaWeb.Infra.Data\\Interfaces\\IEventoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T12:45:35.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Infra.Data\\Interfaces\\IUsuarioRepository.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "AgendaWeb.Infra.Data\\Interfaces\\IUsuarioRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T19:17:10.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EventoRepository.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Repositories\\EventoRepository.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Infra.Data\\Repositories\\EventoRepository.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Repositories\\EventoRepository.cs",
+              "RelativeToolTip": "AgendaWeb.Infra.Data\\Repositories\\EventoRepository.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAqwHkAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T13:12:12.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountRegisterViewModel.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Models\\AccountRegisterViewModel.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Models\\AccountRegisterViewModel.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Models\\AccountRegisterViewModel.cs",
+              "RelativeToolTip": "AgendaWeb.Presentation\\Models\\AccountRegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T14:37:44.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Cadastro.cshtml",
               "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Views\\Agenda\\Cadastro.cshtml",
               "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Views\\Agenda\\Cadastro.cshtml",
               "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Views\\Agenda\\Cadastro.cshtml",
               "RelativeToolTip": "AgendaWeb.Presentation\\Views\\Agenda\\Cadastro.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-15T16:23:57.095Z"
+              "WhenOpened": "2025-01-15T16:23:57.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Criptografia.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Utils\\Criptografia.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Infra.Data\\Utils\\Criptografia.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Utils\\Criptografia.cs",
+              "RelativeToolTip": "AgendaWeb.Infra.Data\\Utils\\Criptografia.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T20:59:39.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AgendaController.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Controllers\\AgendaController.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Controllers\\AgendaController.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Controllers\\AgendaController.cs",
+              "RelativeToolTip": "AgendaWeb.Presentation\\Controllers\\AgendaController.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAADwv+EAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T12:09:53.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "AgendaWeb.Presentation\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T16:59:10.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EventoCadastroViewModel.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Models\\EventoCadastroViewModel.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Models\\EventoCadastroViewModel.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Models\\EventoCadastroViewModel.cs",
+              "RelativeToolTip": "AgendaWeb.Presentation\\Models\\EventoCadastroViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T17:29:07.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "AgendaWeb.Presentation\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAABQAAAAAAAAAAAAYwGIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-11T17:01:15.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AccountLoginViewModel.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Models\\AccountLoginViewModel.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Presentation\\Models\\AccountLoginViewModel.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Presentation\\Models\\AccountLoginViewModel.cs",
+              "RelativeToolTip": "AgendaWeb.Presentation\\Models\\AccountLoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T17:31:09.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Evento.cs",
+              "DocumentMoniker": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Entities\\Evento.cs",
+              "RelativeDocumentMoniker": "AgendaWeb.Infra.Data\\Entities\\Evento.cs",
+              "ToolTip": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\Entities\\Evento.cs",
+              "RelativeToolTip": "AgendaWeb.Infra.Data\\Entities\\Evento.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T14:57:37.801Z",
+              "EditorCaption": ""
             }
           ]
         }

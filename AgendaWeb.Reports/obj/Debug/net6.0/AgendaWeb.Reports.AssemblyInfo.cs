@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgendaWeb.Reports")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+210ba5e30fd1f72539e191f729d018dc357795b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06f37b6defe14ad1a5b35c9f828136b909fc93df")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgendaWeb.Reports")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgendaWeb.Reports")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

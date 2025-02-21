@@ -30,9 +30,9 @@ namespace AgendaWeb.Infra.Data.Repositories
         {
             var query = @"
                 INSERT INTO EVENTO
-                (ID, NOME, DATA, HORA, DESCRICAO, PRIORIDADE, DATAINCLUSAO, DATAALTERACAO)
+                (ID, NOME, DATA, HORA, DESCRICAO, PRIORIDADE, DATAINCLUSAO, DATAALTERACAO, IDUSUARIO)
                 VALUES
-                (@Id, @Nome, @Data, @Hora, @Descricao, @Prioridade, @DataInclusao, @DataAlteracao)
+                (@Id, @Nome, @Data, @Hora, @Descricao, @Prioridade, @DataInclusao, @DataAlteracao, @IdUsuario)
             ";
 
             //conectando no banco de dados
@@ -108,18 +108,18 @@ namespace AgendaWeb.Infra.Data.Repositories
             }
         }
 
-        public List<Evento> GetByDatas(DateTime? dataMin, DateTime? dataMax, int? ativo)
+        public List<Evento> GetByDatas(DateTime? dataMin, DateTime? dataMax, int? ativo, Guid idUsuario)
         {
             var query = @"
                 SELECT * FROM EVENTO
-                WHERE ATIVO = @ativo AND DATA BETWEEN @dataMin AND @dataMax
+                WHERE ATIVO = @ativo AND DATA BETWEEN @dataMin AND @dataMax AND @IDUSUARIO = @idUsuario
                 ORDER BY DATA DESC, HORA DESC
             ";
 
             using (var connection = new SqlConnection(_connectionString))
             {
                 return connection
-                    .Query<Evento>(query, new { ativo, dataMin, dataMax })
+                    .Query<Evento>(query, new { ativo, dataMin, dataMax, idUsuario })
                     .ToList();
             }
         }
