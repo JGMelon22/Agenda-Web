@@ -2,7 +2,12 @@
 using AgendaWeb.Infra.Data.Interfaces;
 using AgendaWeb.Infra.Data.Utils;
 using AgendaWeb.Presentation.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Security.Claims;
 
 namespace AgendaWeb.Presentation.Controllers
 {
@@ -11,7 +16,7 @@ namespace AgendaWeb.Presentation.Controllers
         //atributo
         private readonly IUsuarioRepository _usuarioRepository;
 
-        //Construtor para inicialização  do atributo
+        //construtor para inicialização do atributo
         public AccountController(IUsuarioRepository usuarioRepository)
         {
             _usuarioRepository = usuarioRepository;
@@ -23,34 +28,58 @@ namespace AgendaWeb.Presentation.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(AccountLoginViewModel model) 
+        public IActionResult Login(AccountLoginViewModel model)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    
+                    //procurar o usuario no banco de 
+                    //dados atraves do email e senha
+                    var usuario = _usuarioRepository
+                        .GetByEmailESenha(model.Email,CriptografiaUtil.GetMD5(model.Senha));
 
-                    //procurar o usuario no banco de dados atraves do email e senha
-                    var usuario = _usuarioRepository.GetByEmailESenha(model.Email, CriptografiaUtil.GetMD5(model.Senha));
-
-                    if(usuario != null)
+                    //verificar se o usuário foi encontrado
+                    if (usuario != null)
                     {
-                        TempData["MensagemSucesso"] = $"Parabéns, {usuario.Nome}! Acesso ao sistema realizado com sucesso.";
+                        TempData["MensagemSucesso"] = $"Parabéns, { usuario.Nome}!Acesso ao sistema realizadocom sucesso.";
 
-                        HttpContext.Session.SetString("nome_usuario", usuario.Nome);
+                        //gravar os dados usuário autenticado em sessão
+                        var userIdentityModel = new UserIdentityModel
+                        {
+                            Id = usuario.Id,
+                            Nome = usuario.Nome,
+                            Email = usuario.Email,
+                            DataInclusao = usuario.DataInclusao,
+                            DataHoraAcesso = DateTime.Now
+                        };
 
-                        //redirecionar para a página inical do projeto
+                        //converter o objeto em json
+                        var json = JsonConvert.SerializeObject(userIdentityModel);
+                        HttpContext.Session.SetString("usuario", json);
+
+                        #region Criando a permissão de acesso do usuário
+
+                        var autorizacao = new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, usuario.Id.ToString()) },
+                         CookieAuthenticationDefaults.AuthenticationScheme);
+
+                        var claimPrincipal = new ClaimsPrincipal(autorizacao);
+                        HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimPrincipal);
+
+                        #endregion
+
+                        //redirecionar para a página inicial do projeto
                         return RedirectToAction("Index", "Home");
+                        //Home/Index
                     }
                     else
                     {
-                        TempData["MensagemErro"] = "Acesso negado. Usuário inválido";
+                        TempData["MensagemErro"] = "Acesso negado. Usuário inválido.";
                     }
                 }
-                catch (Exception ex)
+                catch (Exception e)
                 {
-                    TempData["MensagemErro"] = ex.Message;
+                    TempData["MensagemErro"] = e.Message;
                 }
             }
 
@@ -69,10 +98,11 @@ namespace AgendaWeb.Presentation.Controllers
             {
                 try
                 {
-                    //verificar se o email informado já está cadastrado no banco de dados
+                    //verificar se o email informado 
+                    //já está cadastrado no banco de dados
                     if (_usuarioRepository.GetByEmail(model.Email) != null)
                     {
-                        TempData["MensagemErro"] = $"O email informado já está cadastrado. Tente outro.";
+                        TempData["MensagemErro"] = $"O email informado já está cadastrado.Tente outro.";
                     }
                     else
                     {
@@ -81,10 +111,11 @@ namespace AgendaWeb.Presentation.Controllers
                         usuario.Id = Guid.NewGuid();
                         usuario.Nome = model.Nome;
                         usuario.Email = model.Email;
-                        usuario.Senha = CriptografiaUtil.GetMD5(model.Senha);
+                        usuario.Senha =CriptografiaUtil.GetMD5(model.Senha);
                         usuario.DataInclusao = DateTime.Now;
 
-                        _usuarioRepository.Create(usuario); //cadastrando o usuário
+                        _usuarioRepository.Create(usuario);
+                        //cadastrando o usuário
 
                         TempData["MensagemSucesso"] = "Usuário cadastrado com sucesso!";
                         ModelState.Clear(); //limpar os campos do formulário
@@ -97,6 +128,25 @@ namespace AgendaWeb.Presentation.Controllers
             }
 
             return View();
+        }
+
+        [Authorize]
+        public IActionResult UserData()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Logout()
+        {
+            //apagar os dados do usuário da sessão
+            HttpContext.Session.Remove("usuario");
+
+            //apagar a permissão dada ao usuário autenticado
+            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            //redirecionar o usuário para a página de login
+            return RedirectToAction("Login");
         }
     }
 }

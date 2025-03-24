@@ -4,6 +4,7 @@ using AgendaWeb.Presentation.Models;
 using AgendaWeb.Reports.Interfaces;
 using AgendaWeb.Reports.Services;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace AgendaWeb.Presentation.Controllers
 {
@@ -23,14 +24,19 @@ namespace AgendaWeb.Presentation.Controllers
             return View();
         }
 
+
         [HttpPost] //Annotation indica que o método será executado no SUBMIT
         public IActionResult Cadastro(EventoCadastroViewModel model)
         {
             //verificar se todos os campos passaram nas regras de validação
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
+                    //ler o usuário autenticado na sessão
+                    var json = HttpContext.Session.GetString("usuario");
+                    var usuario = JsonConvert.DeserializeObject<UserIdentityModel>(json);
+
                     var evento = new Evento
                     {
                         Id = Guid.NewGuid(),
@@ -40,7 +46,8 @@ namespace AgendaWeb.Presentation.Controllers
                         Descricao = model.Descricao,
                         Prioridade = Convert.ToInt32(model.Prioridade),
                         DataInclusao = DateTime.Now,
-                        DataAlteracao = DateTime.Now
+                        DataAlteracao = DateTime.Now,
+                        IdUsuario = usuario.Id //foreign key
                     };
 
                     //gravando no banco de dados
@@ -49,7 +56,7 @@ namespace AgendaWeb.Presentation.Controllers
                     TempData["MensagemSucesso"] = $"Evento {evento.Nome}, cadastrado com sucesso.";
                     ModelState.Clear(); //limpando os campos do formulário (model)
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     TempData["MensagemErro"] = e.Message;
                 }
@@ -61,17 +68,16 @@ namespace AgendaWeb.Presentation.Controllers
 
             return View();
         }
-
+        
         public IActionResult Consulta()
         {
             return View();
         }
-
         [HttpPost] //Annotation indica que o método será executado no SUBMIT
         public IActionResult Consulta(EventoConsultaViewModel model)
         {
             //verificar se todos os campos da model passaram nas validações
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
@@ -80,10 +86,14 @@ namespace AgendaWeb.Presentation.Controllers
                     var dataMax = Convert.ToDateTime(model.DataMax);
 
                     //verificando se a data de inicio é menor ou igual a data de fim
-                    if(dataMin <= dataMax)
+                    if (dataMin <= dataMax)
                     {
+                        //ler o usuário autenticado na sessão
+                        var json = HttpContext.Session.GetString("usuario");
+                        var usuario = JsonConvert.DeserializeObject<UserIdentityModel>(json);
+
                         //realizando a consulta de eventos
-                        model.Eventos = _eventoRepository.GetByDatas(dataMin, dataMax, model.Ativo,Guid.NewGuid ());
+                        model.Eventos = _eventoRepository.GetByDatas(dataMin, dataMax, model.Ativo, usuario.Id);
 
                         //verificando se algum evento foi obtido
                         if (model.Eventos.Count > 0)
@@ -98,9 +108,9 @@ namespace AgendaWeb.Presentation.Controllers
                     else
                     {
                         TempData["MensagemErro"] = "A data de início deve ser menor ou igual a data de término.";
-                    }                    
+                    }
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     TempData["MensagemErro"] = e.Message;
                 }
@@ -132,7 +142,7 @@ namespace AgendaWeb.Presentation.Controllers
                 model.Prioridade = evento.Prioridade.ToString();
                 model.Ativo = evento.Ativo;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 TempData["MensagemErro"] = e.Message;
             }
@@ -148,12 +158,16 @@ namespace AgendaWeb.Presentation.Controllers
         public IActionResult Edicao(EventoEdicaoViewModel model)
         {
             //verificar se todos os campos passaram nas regras de validação
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
                     //obtendo os dados do evento no banco de dados..
                     var evento = _eventoRepository.GetById(model.Id);
+
+                    //ler o usuário autenticado na sessão
+                    var json = HttpContext.Session.GetString("usuario");
+                    var usuario = JsonConvert.DeserializeObject<UserIdentityModel>(json);
 
                     //modificar os dados do evento
                     evento.Nome = model.Nome;
@@ -163,6 +177,7 @@ namespace AgendaWeb.Presentation.Controllers
                     evento.Prioridade = Convert.ToInt32(model.Prioridade);
                     evento.Ativo = model.Ativo;
                     evento.DataAlteracao = DateTime.Now;
+                    evento.IdUsuario = usuario.Id;
 
                     //atualizando no banco de dados
                     _eventoRepository.Update(evento);
@@ -172,7 +187,7 @@ namespace AgendaWeb.Presentation.Controllers
                     //redirecionamento para a página de consulta
                     return RedirectToAction("Consulta");
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     TempData["MensagemErro"] = e.Message;
                 }
@@ -197,7 +212,7 @@ namespace AgendaWeb.Presentation.Controllers
 
                 TempData["MensagemSucesso"] = $"Evento '{evento.Nome}', excluído com sucesso.";
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 TempData["MensagemErro"] = e.Message;
             }
@@ -214,7 +229,7 @@ namespace AgendaWeb.Presentation.Controllers
         [HttpPost]
         public IActionResult Relatorio(EventoRelatorioViewModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
@@ -222,11 +237,15 @@ namespace AgendaWeb.Presentation.Controllers
                     DateTime dataMin = Convert.ToDateTime(model.DataMin);
                     DateTime dataMax = Convert.ToDateTime(model.DataMax);
 
+                    //ler o usuário autenticado na sessão
+                    var json = HttpContext.Session.GetString("usuario");
+                    var usuario = JsonConvert.DeserializeObject<UserIdentityModel>(json);
+
                     //consultar os eventos no banco atraves das datas
-                    var eventos = _eventoRepository.GetByDatas(dataMin, dataMax, model.Ativo, Guid.NewGuid());
+                    var eventos = _eventoRepository.GetByDatas(dataMin, dataMax, model.Ativo, usuario.Id);
 
                     //verificar se algum evento foi obtido
-                    if(eventos.Count > 0)
+                    if (eventos.Count > 0)
                     {
                         //criando um objeto para a interface..
                         IEventoReportService eventoReportService = null; //vazio
@@ -234,8 +253,8 @@ namespace AgendaWeb.Presentation.Controllers
                         //variaveis para definir os parametros de download
                         var contentType = string.Empty; //MIME TYPE
                         var fileName = string.Empty;
-                                                
-                        switch(model.Formato)
+
+                        switch (model.Formato)
                         {
                             case 1: //Polimorfismo
                                 eventoReportService = new EventoReportServicePdf();
@@ -243,6 +262,7 @@ namespace AgendaWeb.Presentation.Controllers
                                 fileName = $"eventos_{DateTime.Now.ToString("ddMMyyyyHHmmss")}.pdf";
 
                                 break;
+
 
                             case 2: //Polimorfismo
                                 eventoReportService = new EventoReportServiceExcel();
@@ -262,7 +282,7 @@ namespace AgendaWeb.Presentation.Controllers
                         TempData["MensagemAlerta"] = "Nenhum evento foi obtido para a pesquisa informada.";
                     }
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     TempData["MensagemErro"] = e.Message;
                 }

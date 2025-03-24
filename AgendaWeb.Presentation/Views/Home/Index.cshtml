@@ -1,4 +1,176 @@
-﻿<h5>Seja bem vindo ao Projeto!</h5>
-<p>
-    Aula de AspNet MVC - COTI Informática
-</p>
+﻿@model AgendaWeb.Presentation.Models.DashboardViewModel
+
+@{
+    var dataInicio = Convert.ToDateTime(Model.DataInicio);
+    var dataFim = Convert.ToDateTime(Model.DataFim);
+}
+
+<div class="row mb-3">
+    <div class="col-md-12">
+        Período de datas de: <strong>@dataInicio.ToString("dd/MM/yyyy")</strong>
+        até: <strong>@dataFim.ToString("dd/MM/yyyy")</strong>
+    </div>
+</div>
+
+
+<div class="row mb-2">
+    <div class="col-md-6">
+        <strong>Quantidade de eventos por prioridade:</strong>
+    </div>
+    <div class="col-md-6">
+        <strong>Quantidade de eventos ativos e inativos:</strong>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-md-2">
+        <div class="card card-body bg-danger text-white">
+            <div class="row">
+                <div class="col-md-9">
+                    Alta:
+                </div>
+                <div class="col-md-3">
+                    <h5><strong>@Model.TotalPrioridadeAlta</strong></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card card-body bg-warning text-white">
+            <div class="row">
+                <div class="col-md-9">
+                    Média:
+                </div>
+                <div class="col-md-3">
+                    <h5><strong>@Model.TotalPrioridadeMedia</strong></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card card-body bg-success text-white">
+            <div class="row">
+                <div class="col-md-9">
+                    Baixa:
+                </div>
+                <div class="col-md-3">
+                    <h5><strong>@Model.TotalPrioridadeBaixa</strong></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card card-body bg-primary text-white">
+            <div class="row">
+                <div class="col-md-9">
+                    Eventos Ativos:
+                </div>
+                <div class="col-md-3">
+                    <h5><strong>@Model.TotalAtivos</strong></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card card-body bg-secondary text-white">
+            <div class="row">
+                <div class="col-md-9">
+                    Eventos Inativos:
+                </div>
+                <div class="col-md-3">
+                    <h5><strong>@Model.TotalInativos</strong></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- desenvolvendo os gráficos-->
+
+<div class="row mb-5">
+    <div class="col-md-6">
+        <div id="graficoPrioridades">
+
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div id="graficoAtivosInativos">
+        </div>
+    </div>
+</div>
+
+<!-- Referência highcharts-->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<script>
+
+    //Gráfico de eventos por prioridade
+    var arrayPrioridades = [];
+
+    arrayPrioridades.push(['ALTA', @Model.TotalPrioridadeAlta]);
+    arrayPrioridades.push(['MEDIA', @Model.TotalPrioridadeMedia]);
+    arrayPrioridades.push(['BAIXA', @Model.TotalPrioridadeBaixa]);
+
+    new Highcharts.Chart({
+        chart: {
+            type: 'pie',
+            renderTo: 'graficoPrioridades'
+        },
+        title: {
+            text: 'Quantidade de eventos por prioridade'
+        },
+        plotOptions: {
+            pie: {
+                innerSize: '60%',
+                dataLabels: {
+                    enable: true
+                },
+                showInLegend: true
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            data: arrayPrioridades
+        }],
+        colors: ['#d9534f', '#f0ad4e', '#5cb85c']
+    });
+
+    //Gráfico de eventos por ativos e inativos
+    var arrayAtivosInativos = [];
+
+    arrayAtivosInativos.push(['ATIVOS', @Model.TotalAtivos]);
+    arrayAtivosInativos.push(['INATIVOS', @Model.TotalInativos]);
+
+    new Highcharts.Chart({
+        chart: {
+            type: 'pie',
+            renderTo: 'graficoAtivosInativos'
+        },
+        title: {
+            text: 'Quantidade de eventos ativos / inativos'
+        },
+        plotOptions: {
+            pie: {
+                innerSize: '60%',
+                dataLabels: {
+                    enable: true
+                },
+                showInLegend: true
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            data: arrayAtivosInativos
+        }],
+        colors: ['#0275d8', '#292b2c']
+    });
+
+</script>
+

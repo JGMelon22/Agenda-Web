@@ -112,7 +112,7 @@ namespace AgendaWeb.Infra.Data.Repositories
         {
             var query = @"
                 SELECT * FROM EVENTO
-                WHERE ATIVO = @ativo AND DATA BETWEEN @dataMin AND @dataMax AND @IDUSUARIO = @idUsuario
+                WHERE ATIVO = @ativo AND DATA BETWEEN @dataMin AND @dataMax AND IDUSUARIO = @idUsuario
                 ORDER BY DATA DESC, HORA DESC
             ";
 

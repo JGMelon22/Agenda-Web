@@ -1,0 +1,37 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@using AgendaWeb.Presentation.Models
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+
+@{
+    var json = HttpContextAccessor.HttpContext.Session.GetString("usuario");
+
+    var usuario = JsonConvert.DeserializeObject<UserIdentityModel>(json);
+}
+
+<h5>Dados usuário autenticado:</h5>
+<hr/>
+
+<div class="mb-2">
+    ID do usuário: <strong>@usuario.Id</strong>
+</div>
+
+<div class="mb-2">
+    Nome do usuário: <strong>@usuario.Nome</strong>
+</div>
+
+<div class="mb-2">
+    Email: <strong>@usuario.Email</strong>
+</div>
+
+<div class="mb-2">
+    Data / Hora de acesso ao sistema: 
+    <strong>@usuario.DataHoraAcesso</strong>
+</div>
+
+<div class="mb-2">
+    cadastrado em: <strong>@usuario.DataInclusao</strong>
+</div>
+
+

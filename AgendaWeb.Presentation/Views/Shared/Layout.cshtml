@@ -1,5 +1,16 @@
 ﻿@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@using AgendaWeb.Presentation.Models
+
 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    //ler o conteudo json gravado na sessão
+    var json = HttpContextAccessor.HttpContext.Session.GetString("usuario");
+
+    //deserializar o conteudo do JSON
+    var usuario = JsonConvert.DeserializeObject<UserIdentityModel>(json);
+}
 
 @{
     Layout = null;
@@ -10,7 +21,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>COTI Informática - Agenda</title>
+    <title>Agenda</title>
 
     <!-- folhas de estilo CSS -->
     <link rel="stylesheet" href="~/css/bootstrap.css" />
@@ -19,29 +30,56 @@
 <body>
 
     <!-- menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Agenda Web</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">AgendaEventos</a>
+            <button class="navbar-toggler" type="button" data-bs-
+                    toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse"
+                 id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Home/Index">
+                        <a class="nav-link active" aria-current="page"
+                           href="/Home/Index">
                             Página inicial
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#"
+                           id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Gerenciar Agenda
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/Agenda/Cadastro">Cadastrar Evento</a></li>
-                            <li><a class="dropdown-item" href="/Agenda/Consulta">Consultar Evento</a></li>
+                        <ul class="dropdown-menu" aria-
+                            labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item"
+                                   href="/Agenda/Cadastro">
+                                    Cadastrar Evento
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item"
+                                   href="/Agenda/Consulta">
+                                    Consultar Evento
+                                </a>
+                            </li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/Agenda/Relatorio">Relatório de Eventos</a></li>
+                            <li>
+                                <a class="dropdown-item"
+                                   href="/Agenda/Relatorio">
+                                    Relatório de Eventos
+                                </a>
+                            </li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary"
+                           aria-current="page" href="/Account/Logout"
+                           onclick="return confirm('Deseja realmente sair do sistema?');">
+                            Sair do Sistema
+                        </a>
                     </li>
                 </ul>
 
@@ -49,10 +87,11 @@
                     <span class="text-white">Usuário:</span>
                     &nbsp;
                     <strong class="text-white">
-                        @HttpContextAccessor.HttpContext.Session.GetString("nome_usuario")
+                        @usuario.Nome
                     </strong>
-                    &nbsp; &nbsp;
+                    &nbsp;&nbsp;
                 </form>
+
             </div>
         </div>
     </nav>
@@ -60,23 +99,29 @@
     <!-- exibir mensagem de sucesso -->
     @if (TempData["MensagemSucesso"] != null)
     {
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <div class="alert alert-success alert-dismissible fade show"
+             role="alert">
             <strong>Sucesso!</strong> @TempData["MensagemSucesso"]
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <button type="button" class="btn-close"
+                    data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     }
     else if (TempData["MensagemAlerta"] != null)
     {
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <div class="alert alert-warning alert-dismissible fade show"
+             role="alert">
             <strong>Aviso!</strong> @TempData["MensagemAlerta"]
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"
+                    aria-label="Close"></button>
         </div>
     }
     else if (TempData["MensagemErro"] != null)
     {
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <div class="alert alert-danger alert-dismissible fade show"
+             role="alert">
             <strong>Erro!</strong> @TempData["MensagemErro"]
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"
+                    aria-label="Close"></button>
         </div>
     }
 
