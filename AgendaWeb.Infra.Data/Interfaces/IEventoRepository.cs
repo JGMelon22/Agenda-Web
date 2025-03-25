@@ -1,9 +1,4 @@
-﻿using AgendaWeb.Infra.Data.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AgendaWeb.Infra.Data.Entities;
 
 namespace AgendaWeb.Infra.Data.Interfaces
 {
@@ -19,6 +14,6 @@ namespace AgendaWeb.Infra.Data.Interfaces
         /// <param name="dataMax">Data de termino do periodo</param>
         /// <param name="ativo">Flag 0 para inativo ou 1 para ativo</param>
         /// <returns>Lista de eventos</returns>
-        List<Evento> GetByDatas(DateTime? dataMin, DateTime? dataMax, int? ativo,  Guid idUsuario);
+        List<Evento> GetByDatas(DateTime? dataMin, DateTime? dataMax, int? ativo, Guid idUsuario);
     }
 }

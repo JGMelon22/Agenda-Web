@@ -1,4 +1,4 @@
-﻿namespace AgendaWeb.Presentation.Models
+namespace AgendaWeb.Presentation.Models
 {
     public class DashboardViewModel
     {

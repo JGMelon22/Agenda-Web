@@ -1,4 +1,4 @@
-﻿using AgendaWeb.Infra.Data.Interfaces;
+using AgendaWeb.Infra.Data.Interfaces;
 using AgendaWeb.Presentation.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -25,8 +25,8 @@ namespace AgendaWeb.Presentation.Controllers
                 var dataAtual = DateTime.Now;
                 //definindo as datas..
                 model.DataInicio = new DateTime(dataAtual.Year, 1, 1);
-                model.DataFim = new DateTime(dataAtual.Year,12, DateTime.DaysInMonth(dataAtual.Year, dataAtual.Month));
-       
+                model.DataFim = new DateTime(dataAtual.Year, 12, DateTime.DaysInMonth(dataAtual.Year, dataAtual.Month));
+
                 //obtendo o usuario autenticado na sessão
                 var json = HttpContext.Session.GetString("usuario");
                 var usuario = JsonConvert.DeserializeObject<UserIdentityModel>(json);
@@ -55,4 +55,3 @@ namespace AgendaWeb.Presentation.Controllers
         }
     }
 }
-

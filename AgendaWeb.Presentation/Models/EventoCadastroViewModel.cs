@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace AgendaWeb.Presentation.Models
 {
@@ -11,7 +11,7 @@ namespace AgendaWeb.Presentation.Models
         [MaxLength(150, ErrorMessage = "Por favor, informe no máximo {1} caracteres.")]
         [Required(ErrorMessage = "Por favor, informe o nome do evento.")]
         public string? Nome { get; set; }
-        
+
         [Required(ErrorMessage = "Por favor, informe a data do evento.")]
         public string? Data { get; set; }
 

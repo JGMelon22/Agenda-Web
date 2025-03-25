@@ -1,4 +1,4 @@
-﻿using AgendaWeb.Infra.Data.Entities;
+using AgendaWeb.Infra.Data.Entities;
 using System.ComponentModel.DataAnnotations;
 
 namespace AgendaWeb.Presentation.Models

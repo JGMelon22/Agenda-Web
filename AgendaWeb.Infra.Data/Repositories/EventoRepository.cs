@@ -1,12 +1,7 @@
-﻿using AgendaWeb.Infra.Data.Entities;
+using AgendaWeb.Infra.Data.Entities;
 using AgendaWeb.Infra.Data.Interfaces;
 using Dapper;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AgendaWeb.Infra.Data.Repositories
 {
@@ -36,7 +31,7 @@ namespace AgendaWeb.Infra.Data.Repositories
             ";
 
             //conectando no banco de dados
-            using(var connection = new SqlConnection(_connectionString))
+            using (var connection = new SqlConnection(_connectionString))
             {
                 //executando a gravação do evento na base de dados
                 connection.Execute(query, obj);
@@ -46,8 +41,8 @@ namespace AgendaWeb.Infra.Data.Repositories
         public void Update(Evento obj)
         {
             var query = @"
-                UPDATE EVENTO 
-                SET 
+                UPDATE EVENTO
+                SET
                     NOME = @Nome,
                     DATA = @Data,
                     HORA = @Hora,
@@ -55,7 +50,7 @@ namespace AgendaWeb.Infra.Data.Repositories
                     PRIORIDADE = @Prioridade,
                     DATAALTERACAO = @DataAlteracao,
                     ATIVO = @Ativo
-                WHERE 
+                WHERE
                     ID = @Id
             ";
 

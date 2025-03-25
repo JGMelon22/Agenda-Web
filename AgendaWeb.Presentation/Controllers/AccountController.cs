@@ -1,4 +1,4 @@
-﻿using AgendaWeb.Infra.Data.Entities;
+using AgendaWeb.Infra.Data.Entities;
 using AgendaWeb.Infra.Data.Interfaces;
 using AgendaWeb.Infra.Data.Utils;
 using AgendaWeb.Presentation.Models;
@@ -34,15 +34,15 @@ namespace AgendaWeb.Presentation.Controllers
             {
                 try
                 {
-                    //procurar o usuario no banco de 
+                    //procurar o usuario no banco de
                     //dados atraves do email e senha
                     var usuario = _usuarioRepository
-                        .GetByEmailESenha(model.Email,CriptografiaUtil.GetMD5(model.Senha));
+                        .GetByEmailESenha(model.Email, CriptografiaUtil.GetMD5(model.Senha));
 
                     //verificar se o usuário foi encontrado
                     if (usuario != null)
                     {
-                        TempData["MensagemSucesso"] = $"Parabéns, { usuario.Nome}!Acesso ao sistema realizadocom sucesso.";
+                        TempData["MensagemSucesso"] = $"Parabéns, {usuario.Nome}!Acesso ao sistema realizadocom sucesso.";
 
                         //gravar os dados usuário autenticado em sessão
                         var userIdentityModel = new UserIdentityModel
@@ -98,7 +98,7 @@ namespace AgendaWeb.Presentation.Controllers
             {
                 try
                 {
-                    //verificar se o email informado 
+                    //verificar se o email informado
                     //já está cadastrado no banco de dados
                     if (_usuarioRepository.GetByEmail(model.Email) != null)
                     {
@@ -111,7 +111,7 @@ namespace AgendaWeb.Presentation.Controllers
                         usuario.Id = Guid.NewGuid();
                         usuario.Nome = model.Nome;
                         usuario.Email = model.Email;
-                        usuario.Senha =CriptografiaUtil.GetMD5(model.Senha);
+                        usuario.Senha = CriptografiaUtil.GetMD5(model.Senha);
                         usuario.DataInclusao = DateTime.Now;
 
                         _usuarioRepository.Create(usuario);

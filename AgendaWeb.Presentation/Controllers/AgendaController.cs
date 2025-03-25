@@ -1,4 +1,4 @@
-﻿using AgendaWeb.Infra.Data.Entities;
+using AgendaWeb.Infra.Data.Entities;
 using AgendaWeb.Infra.Data.Interfaces;
 using AgendaWeb.Presentation.Models;
 using AgendaWeb.Reports.Interfaces;
@@ -68,7 +68,7 @@ namespace AgendaWeb.Presentation.Controllers
 
             return View();
         }
-        
+
         public IActionResult Consulta()
         {
             return View();

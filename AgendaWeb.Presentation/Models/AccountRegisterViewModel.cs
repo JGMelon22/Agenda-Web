@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace AgendaWeb.Presentation.Models
 {
@@ -15,7 +15,7 @@ namespace AgendaWeb.Presentation.Models
 
         [MinLength(6, ErrorMessage = "Por favor, informe no mínimo {1} caracteres.")]
         [MaxLength(20, ErrorMessage = "Por favor, Informe mo máximo {1} caracteres.")]
-        [Required(ErrorMessage ="Por favor, informe a senha")]
+        [Required(ErrorMessage = "Por favor, informe a senha")]
         public string? Senha { get; set; }
 
         [Compare("Senha", ErrorMessage = "Senhas não conferem")]
@@ -23,5 +23,3 @@ namespace AgendaWeb.Presentation.Models
         public string? SenhaConfirmacao { get; set; }
     }
 }
-
-
