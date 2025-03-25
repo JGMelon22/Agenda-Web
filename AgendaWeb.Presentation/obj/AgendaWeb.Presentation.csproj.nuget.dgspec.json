@@ -46,11 +46,11 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.123, )"
+              "version": "[2.1.66, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.3, )"
+              "version": "[4.9.0, )"
             }
           },
           "imports": [
@@ -122,7 +122,7 @@
           "dependencies": {
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.18, )"
+              "version": "[9.0.0, )"
             }
           },
           "imports": [
@@ -194,11 +194,11 @@
           "dependencies": {
             "EPPlus": {
               "target": "Package",
-              "version": "[5.8.6, )"
+              "version": "[7.7.0, )"
             },
             "itext7": {
               "target": "Package",
-              "version": "[7.2.1, )"
+              "version": "[9.1.0, )"
             }
           },
           "imports": [
