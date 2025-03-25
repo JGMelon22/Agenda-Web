@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "07uoG6vDIN8=",
+  "dgSpecHash": "I3aD1UT5kzU=",
   "success": true,
   "projectFilePath": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Reports/AgendaWeb.Reports.csproj",
   "expectedPackageFiles": [
+    "/home/joaog/.nuget/packages/bouncycastle.cryptography/2.4.0/bouncycastle.cryptography.2.4.0.nupkg.sha512",
     "/home/joaog/.nuget/packages/dapper/2.1.66/dapper.2.1.66.nupkg.sha512",
     "/home/joaog/.nuget/packages/epplus/7.7.0/epplus.7.7.0.nupkg.sha512",
     "/home/joaog/.nuget/packages/epplus.interfaces/7.7.0/epplus.interfaces.7.7.0.nupkg.sha512",
     "/home/joaog/.nuget/packages/epplus.system.drawing/7.7.0/epplus.system.drawing.7.7.0.nupkg.sha512",
     "/home/joaog/.nuget/packages/itext/9.1.0/itext.9.1.0.nupkg.sha512",
+    "/home/joaog/.nuget/packages/itext.bouncy-castle-adapter/9.1.0/itext.bouncy-castle-adapter.9.1.0.nupkg.sha512",
     "/home/joaog/.nuget/packages/itext.commons/9.1.0/itext.commons.9.1.0.nupkg.sha512",
     "/home/joaog/.nuget/packages/itext7/9.1.0/itext7.9.1.0.nupkg.sha512",
     "/home/joaog/.nuget/packages/microsoft.dotnet.platformabstractions/1.1.0/microsoft.dotnet.platformabstractions.1.1.0.nupkg.sha512",
