@@ -1,37 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj": {}
+    "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Presentation/AgendaWeb.Presentation.csproj": {}
   },
   "projects": {
-    "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
+    "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Infra.Data/AgendaWeb.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
+        "projectUniqueName": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Infra.Data/AgendaWeb.Infra.Data.csproj",
         "projectName": "AgendaWeb.Infra.Data",
-        "projectPath": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\ryan.freires\\.nuget\\packages\\",
-        "outputPath": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\obj\\",
+        "projectPath": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Infra.Data/AgendaWeb.Infra.Data.csproj",
+        "packagesPath": "/home/joaog/.nuget/packages/",
+        "outputPath": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Infra.Data/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ryan.freires\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/joaog/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.soclminer.com.br/nuget/": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -47,8 +41,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -75,44 +69,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj": {
+    "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Presentation/AgendaWeb.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
+        "projectUniqueName": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Presentation/AgendaWeb.Presentation.csproj",
         "projectName": "AgendaWeb.Presentation",
-        "projectPath": "D:\\AgendaWeb\\AgendaWeb.Presentation\\AgendaWeb.Presentation.csproj",
-        "packagesPath": "C:\\Users\\ryan.freires\\.nuget\\packages\\",
-        "outputPath": "D:\\AgendaWeb\\AgendaWeb.Presentation\\obj\\",
+        "projectPath": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Presentation/AgendaWeb.Presentation.csproj",
+        "packagesPath": "/home/joaog/.nuget/packages/",
+        "outputPath": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Presentation/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ryan.freires\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/joaog/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.soclminer.com.br/nuget/": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
-                "projectPath": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj"
+              "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Infra.Data/AgendaWeb.Infra.Data.csproj": {
+                "projectPath": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Infra.Data/AgendaWeb.Infra.Data.csproj"
               },
-              "D:\\AgendaWeb\\AgendaWeb.Reports\\AgendaWeb.Reports.csproj": {
-                "projectPath": "D:\\AgendaWeb\\AgendaWeb.Reports\\AgendaWeb.Reports.csproj"
+              "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Reports/AgendaWeb.Reports.csproj": {
+                "projectPath": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Reports/AgendaWeb.Reports.csproj"
               }
             }
           }
@@ -129,8 +117,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -156,41 +144,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\AgendaWeb\\AgendaWeb.Reports\\AgendaWeb.Reports.csproj": {
+    "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Reports/AgendaWeb.Reports.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AgendaWeb\\AgendaWeb.Reports\\AgendaWeb.Reports.csproj",
+        "projectUniqueName": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Reports/AgendaWeb.Reports.csproj",
         "projectName": "AgendaWeb.Reports",
-        "projectPath": "D:\\AgendaWeb\\AgendaWeb.Reports\\AgendaWeb.Reports.csproj",
-        "packagesPath": "C:\\Users\\ryan.freires\\.nuget\\packages\\",
-        "outputPath": "D:\\AgendaWeb\\AgendaWeb.Reports\\obj\\",
+        "projectPath": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Reports/AgendaWeb.Reports.csproj",
+        "packagesPath": "/home/joaog/.nuget/packages/",
+        "outputPath": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Reports/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ryan.freires\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/joaog/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.soclminer.com.br/nuget/": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj": {
-                "projectPath": "D:\\AgendaWeb\\AgendaWeb.Infra.Data\\AgendaWeb.Infra.Data.csproj"
+              "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Infra.Data/AgendaWeb.Infra.Data.csproj": {
+                "projectPath": "/home/joaog/Documents/Desenvolvimento/CSharp/Agenda-Web/AgendaWeb.Infra.Data/AgendaWeb.Infra.Data.csproj"
               }
             }
           }
@@ -207,8 +189,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "EPPlus": {
               "target": "Package",
@@ -235,7 +217,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/joaog/.dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

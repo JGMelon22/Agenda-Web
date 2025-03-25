@@ -1,46 +1,46 @@
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Reports.deps.json
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Reports.dll
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\ref\AgendaWeb.Reports.dll
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Reports.pdb
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Infra.Data.dll
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Infra.Data.pdb
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.csproj.AssemblyReference.cache
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.AssemblyInfoInputs.cache
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.AssemblyInfo.cs
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.csproj.CoreCompileInputs.cache
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.csproj.CopyComplete
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.dll
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\ref\AgendaWeb.Reports.dll
-C:\Users\Samsung\Desktop\COTI - Aulas\2021 - C# WebDeveloper Sab Tarde\Aula 09 - 12.02.22\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.pdb
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Reports.deps.json
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Reports.dll
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Reports.pdb
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Infra.Data.dll
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Infra.Data.pdb
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.csproj.AssemblyReference.cache
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.AssemblyInfoInputs.cache
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.AssemblyInfo.cs
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.csproj.CoreCompileInputs.cache
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWe.1EA4C413.Up2Date
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.dll
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\refint\AgendaWeb.Reports.dll
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.pdb
-C:\Users\ryan.freires\Desktop\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\ref\AgendaWeb.Reports.dll
-D:\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Reports.deps.json
-D:\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Reports.dll
-D:\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Reports.pdb
-D:\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Infra.Data.dll
-D:\AgendaWeb\AgendaWeb.Reports\bin\Debug\net6.0\AgendaWeb.Infra.Data.pdb
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.csproj.AssemblyReference.cache
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.GeneratedMSBuildEditorConfig.editorconfig
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.AssemblyInfoInputs.cache
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.AssemblyInfo.cs
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.csproj.CoreCompileInputs.cache
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.sourcelink.json
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWe.1EA4C413.Up2Date
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.dll
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\refint\AgendaWeb.Reports.dll
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\AgendaWeb.Reports.pdb
-D:\AgendaWeb\AgendaWeb.Reports\obj\Debug\net6.0\ref\AgendaWeb.Reports.dll
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Reports.deps.json
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Reports.dll
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/ref/AgendaWeb.Reports.dll
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Reports.pdb
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Infra.Data.dll
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Infra.Data.pdb
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.csproj.AssemblyReference.cache
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.AssemblyInfoInputs.cache
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.AssemblyInfo.cs
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.csproj.CoreCompileInputs.cache
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.csproj.CopyComplete
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.dll
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/ref/AgendaWeb.Reports.dll
+C:/Users/Samsung/Desktop/COTI - Aulas/2021 - C# WebDeveloper Sab Tarde/Aula 09 - 12.02.22/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.pdb
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Reports.deps.json
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Reports.dll
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Reports.pdb
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Infra.Data.dll
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Infra.Data.pdb
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.csproj.AssemblyReference.cache
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.AssemblyInfoInputs.cache
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.AssemblyInfo.cs
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.csproj.CoreCompileInputs.cache
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWe.1EA4C413.Up2Date
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.dll
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/refint/AgendaWeb.Reports.dll
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.pdb
+C:/Users/ryan.freires/Desktop/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/ref/AgendaWeb.Reports.dll
+D:/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Reports.deps.json
+D:/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Reports.dll
+D:/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Reports.pdb
+D:/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Infra.Data.dll
+D:/AgendaWeb/AgendaWeb.Reports/bin/Debug/net6.0/AgendaWeb.Infra.Data.pdb
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.csproj.AssemblyReference.cache
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.GeneratedMSBuildEditorConfig.editorconfig
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.AssemblyInfoInputs.cache
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.AssemblyInfo.cs
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.csproj.CoreCompileInputs.cache
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.sourcelink.json
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWe.1EA4C413.Up2Date
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.dll
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/refint/AgendaWeb.Reports.dll
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/AgendaWeb.Reports.pdb
+D:/AgendaWeb/AgendaWeb.Reports/obj/Debug/net6.0/ref/AgendaWeb.Reports.dll
